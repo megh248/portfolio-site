@@ -1,0 +1,8 @@
+@import '~bootstrap/scss/bootstrap';
+@import "./variables.scss";
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: $background-color;
+    color:$text-primary;
+}
