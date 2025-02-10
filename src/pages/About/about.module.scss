@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+.container {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+  
+  .illustration {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  .decorativeElements {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    opacity: 0.1;
+  }
+}
+
+.textContent {
+  flex: 1;
+}
+
+.sectionTitle {
+  color: $section-title-color;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: #4a4a4a;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .imageContainer {
+    order: -1;
+    display: flex;
+    justify-content: center;
+
+    .illustration {
+      max-width: 300px;
+    }
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+}
